@@ -4,6 +4,9 @@
 # Log file
 *.log
 
+backend/node_modules
+frontend/node_modules
+
 # BlueJ files
 *.ctxt
 
