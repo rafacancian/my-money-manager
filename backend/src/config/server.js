@@ -14,3 +14,4 @@ server.listen(port, function(){
     console.log(`MyMoneyManager - Backend - running on port ${port}.`)
 })
 
+module.exports = server
