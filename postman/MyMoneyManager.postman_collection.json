@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "87afdfd4-ac4f-4263-8516-84f734062d5b",
+		"name": "MyMoneyManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/api/billingCycles",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"billingCycles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/api/billingCycles/count",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"billingCycles",
+						"count"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/api/billingCycles/summary",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"billingCycles",
+						"summary"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/api/billingCycles/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"billingCycles",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "aaaaaaaaaaaaaa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "janeiro/17",
+							"type": "text"
+						},
+						{
+							"key": "month",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": " 2020",
+							"type": "text"
+						},
+						{
+							"key": "credits[0][name]",
+							"value": "Salario empresa",
+							"type": "text"
+						},
+						{
+							"key": "credits[0][value]",
+							"value": "6500",
+							"type": "text"
+						},
+						{
+							"key": "debts[0][name]",
+							"value": "Telefone",
+							"type": "text"
+						},
+						{
+							"key": "debts[0][value]",
+							"value": "50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3003/api/billingCycles",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"billingCycles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
