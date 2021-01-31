@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default props => (
-    <h1>Content</h1>
+    <section className='content'>{props.children}</section>
 )
