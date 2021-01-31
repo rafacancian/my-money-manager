@@ -1,10 +1,14 @@
 const BillingCycle = require('./billingCycle')
+const errorHandler = require('../common/errorHandler')
 
 //express webservices configuration
 BillingCycle.methods(['get', 'post', 'put', 'delete'])
+
 // set validators to put method
 BillingCycle.updateOptions({new: true, runValidators: true})
 
+// intercept middleware to method post and put to apply errorHandler
+BillingCycle.after('post', errorHandler).after('put', errorHandler)
 
 //fix request get method
 BillingCycle.route('get', (req, res, next) => {
