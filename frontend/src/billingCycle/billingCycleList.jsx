@@ -23,22 +23,30 @@ class BillingCycleList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                           <td>name</td>
-                           <td>month</td>
-                           <td>year</td>
-                               <td>
-                                   <button className='btn btn-warning'>
-                                        <i className='fa fa-pencil'></i></button>
-                                   <button className='btn btn-danger'>
-                                        <i className='fa fa-trash-o'></i></button>
-                               </td>
-                           </tr>
+                        {this.renderTableRows()}
                     </tbody>
                 </table>
             </div>
         )
     }
+
+    renderTableRows(){
+        const list = this.props.list || []
+        return list.map(row => (
+            <tr key={row._id}>
+               <td>{row.name}</td>
+               <td>{row.month}</td>
+               <td>{row.year}</td>
+               <td>
+                   <button className='btn btn-warning'>
+                        <i className='fa fa-pencil'></i></button>
+                   <button className='btn btn-danger'>
+                        <i className='fa fa-trash-o'></i></button>
+               </td>
+             </tr>
+        ))
+    }
+
 }
 
 const mapStateToProps = state => ({list: state.billingCycle.list})
