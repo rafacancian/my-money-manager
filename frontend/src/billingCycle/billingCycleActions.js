@@ -29,7 +29,4 @@ export function create(values){
             })
 
     }
-    return{
-        type: ''
-    }
 }
