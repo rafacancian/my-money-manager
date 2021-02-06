@@ -42,6 +42,7 @@ function submit(values, method){
 
 export function showUpdate(billingCycles){
     return [
+        showTabs('tabUpdate'),
         selectTab('tabUpdate'),
         initialize('billingCycleForm', billingCycles)
     ]
@@ -49,6 +50,7 @@ export function showUpdate(billingCycles){
 
 export function showDelete(billingCycles){
     return [
+        showTabs('tabDelete'),
         selectTab('tabDelete'),
         initialize('billingCycleForm', billingCycles)
     ]
@@ -56,7 +58,7 @@ export function showDelete(billingCycles){
 
 export function init(){
     return [
-        showTabs('tabList', 'tabCreate', 'tabUpdate', 'tabDelete'),
+        showTabs('tabList', 'tabCreate'),
         selectTab('tabList'),
         getList(),
         initialize('billingCycleForm', INITIAL_VALUES)
