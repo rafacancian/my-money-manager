@@ -8,6 +8,11 @@ button {
     margin-left: 5px;
 }
 
+.valueBox {
+    padding-bottom: 5px;
+}
+
+
 .table-actions {
     width: 150px;
 }
@@ -19,3 +24,4 @@ button {
 .skin-blue .main-header .logo {
     background-color: #222d32;
 }
+
