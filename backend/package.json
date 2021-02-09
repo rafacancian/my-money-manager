@@ -7,7 +7,7 @@
     "production": "pm2 start src/loader.js --name my-money-backend"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafael Cancian",
   "license": "ISC",
   "description": "",
   "dependencies": {
