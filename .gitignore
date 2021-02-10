@@ -4,6 +4,9 @@
 # Log file
 *.log
 
+# class that contains the secret key
+#.env
+
 backend/node_modules
 frontend/node_modules
 
